@@ -57,7 +57,7 @@ return array(
     //resources-webinar
     'webinar_title' => '5:00 PM, AUG 4, 2018<br />START LIVE',
     'webinar_title_text1' => 'Developing blockchain applications using the MOAC MotherChain and MicroChain platform',
-    'webinar_title_text2' => 'David Chen - MOAC Blockchain Project co-founder and Jingtum Blockchain Project co-founder. Current CEO of MOAC Blockchain Tech Co. in Palo Alto.',
+    'webinar_title_text2' => 'David Chen - MOAC Blockchain Project co-founder and Jingtum Blockchain Project co-founder. Current CEO of MOAC Blockchain Tech Inc. in Palo Alto.',
     'webinar_title2' => 'PAST SEMINAR',
     
     //community
