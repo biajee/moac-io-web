@@ -1842,7 +1842,7 @@ var loadScript = ( function() {
         }
     };
 }());
-if(JH.browserandroid()||JH.browserios()||JH.browserwx()){
-	var host = window.location.host;
-	window.location.href = "http://"+host+"/wap/";
-}
+//if(JH.browserandroid()||JH.browserios()||JH.browserwx()){
+//	var host = window.location.host;
+//	window.location.href = "http://"+host+"/wap/";
+//}
