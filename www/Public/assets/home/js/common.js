@@ -1,6 +1,5 @@
-//判断设备是pc还是手机
-function browserRedirect() {
-    var sUserAgent = navigator.userAgent.toLowerCase();
+$(document).ready(function(){
+	var sUserAgent = navigator.userAgent.toLowerCase();
     var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
     var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
     var bIsMidp = sUserAgent.match(/midp/i) == "midp";
@@ -12,20 +11,20 @@ function browserRedirect() {
     var windowWidth = $(window).width();
     var windowH = $(window).height();
     if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-    	
     	//判断是否为微信内置浏览器
     	var ua = window.navigator.userAgent.toLowerCase();
 	    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
-	    	
+    		var host = window.location.host;
+			window.location.href = "http://"+host+"/wap/";
     	}else{
-    		//移动端,微信外部
+    		//移动端,非微信浏览器
     		var host = window.location.host;
 			window.location.href = "http://"+host+"/wap/";
     	}
     } else {
     	//pc端
     }
-}
+});
 (function($) {
 var jSelect = $(".jsSelect"); 
 $(jSelect).find("li:first").hover(function(){ 
