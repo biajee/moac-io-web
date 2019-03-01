@@ -14,8 +14,8 @@ $(document).ready(function(){
     	//判断是否为微信内置浏览器
     	var ua = window.navigator.userAgent.toLowerCase();
 	    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
-    		var host = window.location.host;
-			window.location.href = "http://"+host+"/wap/";
+//  		var host = window.location.host;
+//			window.location.href = "http://"+host+"/wap/";
     	}else{
     		//移动端,非微信浏览器
     		var host = window.location.host;
