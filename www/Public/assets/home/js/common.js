@@ -15,11 +15,11 @@ $(document).ready(function(){
     	var ua = window.navigator.userAgent.toLowerCase();
 	    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
 //  		var host = window.location.host;
-//			window.location.href = "https://"+host+"/wap/";
+//			window.location.href = "http://"+host+"/wap/";
     	}else{
     		//移动端,非微信浏览器
     		var host = window.location.host;
-			window.location.href = "https://"+host+"/wap/";
+			window.location.href = "http://"+host+"/wap/";
     	}
     } else {
     	//pc端
