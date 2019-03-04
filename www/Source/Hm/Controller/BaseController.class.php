@@ -12,30 +12,6 @@ class BaseController extends Controller {
     protected $needshare = false;
     
     public function _initialize() {
-    	$pageURL = $_SERVER["REQUEST_URI"];
-//  	$pageURL = 'http';
-//		$pageURL .= "://";
-//		$pageURL .= $_SERVER["SERVER_NAME"] . $_SERVER["REQUEST_URI"];
-		$this->assign('pageURL', $pageURL);
-        $this->cache = service('Cache');
-        //系统设置
-        $setting = $this->cache->getData('SettingMap');
-        $this->setting = array_change_key_case($setting,  CASE_LOWER);
-        C($this->setting);
-        $this->assign('setting', $this->setting);
-        unset($setting);
-        //会员信息
-        //$sess = session('member');
-        $sess = $this->getSess();
-        if (!empty($sess)) {
-            $user = D('Member', 'Service')->getMember($sess['id']);
-            $user['uid'] = $user['id'];
-            $this->member = $user;
-
-            $this->assign('member', $this->member);
-        }
-        // Share
-        $this->buildShare();
         //语言包功能
         $this->lang = cookie('think_language');
     	if(empty($this->lang)){
@@ -63,36 +39,6 @@ class BaseController extends Controller {
 		    }
     	}
     	$this->assign('langset', $this->lang);
-        //初始化服务
-        $this->cacheSvc = D('Cache','Service');
-
-        //Referee
-        $referee = I('tn');
-        if ($referee) {
-            session('referee', $referee);
-        }
-        //Wechat share
-        if (is_weixin()) {
-            $svc = service('Wechat');
-            //$svc->clearCache();
-            $package = $svc->getSignPackage();
-            $this->assign('isWeixin', true);
-            $this->assign('signPackage', $package);
-        }
-        $this->getBadge();
-        $this->page = array(
-            'title' => $this->setting['site_seotitle'] . '-'. $this->setting['site_name'],
-            'keywords' => $this->setting['site_seokey'],
-            'description' => $this->setting['site_seodesc']
-        );
-
-        //
-        if (empty($this->member)) {
-            $refer = $_SERVER['REQUEST_URI'];
-            $url = U('Auth/index') . '?refer=' . urlencode($refer);
-            $this->assign('loginUrl', $url);
-        }
-    }
 
     public function _empty() {
         $this->show('栏目建设中...');
