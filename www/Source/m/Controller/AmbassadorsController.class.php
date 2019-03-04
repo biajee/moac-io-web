@@ -1,5 +1,5 @@
 <?php
-namespace Wap\Controller;
+namespace m\Controller;
 class AmbassadorsController extends BaseController {
     public function ambassadors(){
         //显示模板

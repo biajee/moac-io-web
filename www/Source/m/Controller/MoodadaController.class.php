@@ -1,5 +1,5 @@
 <?php
-namespace Wap\Controller;
+namespace m\Controller;
 class MoodadaController extends BaseController {
     public function moodada(){
         //显示模板

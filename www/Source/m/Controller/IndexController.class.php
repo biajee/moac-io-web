@@ -1,5 +1,5 @@
 <?php
-namespace Wap\Controller;
+namespace m\Controller;
 class IndexController extends BaseController {
     public function _initialize()
     {
