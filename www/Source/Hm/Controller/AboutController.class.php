@@ -1,5 +1,5 @@
 <?php
-namespace M\Controller;
+namespace Hm\Controller;
 class AboutController extends BaseController {
     public function cookie_policy(){
         //显示模板
