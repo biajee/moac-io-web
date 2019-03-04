@@ -2,20 +2,20 @@
 return array(
     'LOG_RECORD' => false,
     //系统配置
-	'MODULE_ALLOW_LIST'    =>    array('Admin','Wap','Home','D','Dm'),
+	'MODULE_ALLOW_LIST'    =>    array('Admin','Wap','Home','D','Dm','m'),
 	'DEFAULT_MODULE'       =>    'Home',
 	'MODULE_DENY_LIST'   => array('Common'),
     'URL_MODEL'=>2,
 	'APP_SUB_DOMAIN_DEPLOY' =>  1,
 	'APP_SUB_DOMAIN_RULES'  => array(
-		'm.gofun-tj.com'   => 'Wap',
+		'm.gofun-tj.com'   => 'M',
 	),
     'DEFAULT_FILTER' => '',
     'DB_TYPE'=>'mysql',
-    'DB_HOST'=>'127.0.0.1', 
-    'DB_NAME'=>'moac',
-    'DB_USER'=>'moac',
-    'DB_PWD'=>'moac@123',
+    'DB_HOST'=>'localhost', 
+    'DB_NAME'=>'hiwibang',
+    'DB_USER'=>'root',
+    'DB_PWD'=>'',
     'DB_PORT'=>'',
     'DB_PREFIX'=>'edb_',
 	//缓存配置

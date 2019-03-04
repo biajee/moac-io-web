@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>MOAC</title>
+<meta name="keywords" content="MOAC">
+<meta name="description" content="MOAC">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" href="__CSS__/animate.css">
+<link rel="stylesheet" href="__CSS__/style.css">
+<script type="text/javascript" src="__JS__/jquery.js"></script>
+</head>
+<body>
+<div class="header" id="header">
+	<div class="dt h100x">
+		<div class="dc w60 ac" id="header-menu">
+			<div class="header-menu ca am">
+				<div class="ico-menu ca adx2"></div>
+				<div class="ico-menu ca adx2"></div>
+				<div class="ico-menu ca adx2"></div>
+			</div>
+		</div>
+		<div class="dc ac openlink pl15" url="index.html"><span class="icon icon-logo am"></span></div>
+		<div class="dc w60 ac language">
+			<if condition="$langset eq 'en-us'"><a href="{:U('Index/index')}?lang=zh-cn"><span class="icon icon-language am"></span><span class="am ml5 f12">{$Think.lang.lang_wap_zh}</span></a></if>
+			<if condition="$langset eq 'zh-cn'"><a href="{:U('Index/index')}?lang=en-us"><span class="icon icon-language am"></span><span class="am ml5 f12">{$Think.lang.lang_wap_en}</span></a></if>
+		</div>
+	</div>
+</div>
+<div id="header-menu-list">
+	<div class="scroll">
+		<div class="cl">
+			<ul class="menu">
+				<li class="menu-item">
+					<a href="{:U('Index/index')}">{$Think.lang.nav_home}</a>
+				</li>
+<!-- 			<li class="menu-item">
+					<a href="{:U('Ambassadors/ambassadors')}">{$Think.lang.nav_ambassadors}</a>
+				</li>
+-->				<li class="menu-item">
+					<a href="{:U('Moodada/moodada')}">{$Think.lang.nav_moodada}</a>
+				</li>
+				<li class="menu-item">
+					<a href="{:U('Resources/resource_news')}">{$Think.lang.nav_resources}</a>
+				</li>
+				<li class="menu-item">
+					<a href="https://developer.moac.io/">{$Think.lang.nav_developers}</a>
+				</li>
+				<!--<li class="menu-item">
+					<a href="https://www.candydrop.io/moac">Bounty</a>
+				</li>-->
+				<li class="menu-item current-menu-item">
+					<a href="{:U('Faq/faq')}">{$Think.lang.nav_faqs}</a>
+				</li>
+				<li class="menu-item">
+					<a href="{:U('Community/community')}">{$Think.lang.nav_community}</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="page" id="page">
+<div class="main">
+	<div class="box al firstScreen pt60">
+		<div class="bg-black-light ptb15 plr20 pubdate">
+			<div class="wrap">
+				<div class="f14 fb">MOAC</div>
+			</div>
+		</div>
+	</div>
+	<div class="box bg-gray-light">
+		<div class="wrap">
+			<div class="f22 fb ac pt30 pb15">{$Think.lang.faq_title}</div>
+			<div class="lh1x2 ac pb20 bb f12" style="border-color:#333;">
+				{$Think.lang.faq_title_span}
+			</div>
+			<div class="ptb40 bb" style="border-color:#333;">
+				<div class="pb20 plr20">
+					<img src="__IMG__/faq_index.svg" width="30" height="30" class="am mr5">
+					<span class="am f18 fb">{$Think.lang.faq_index}</span>
+				</div>
+				<div class="dt faq-index at">
+					<div class="dc plr20">
+						<ul>
+							<li><a href="#faq1">{$Think.lang.faq_index_q1}</a></li>
+							<li><a href="#faq2">{$Think.lang.faq_index_q2}</a></li>
+							<li><a href="#faq3">{$Think.lang.faq_index_q3}</a></li>
+							<li><a href="#faq4">{$Think.lang.faq_index_q4}</a></li>
+							<li><a href="#faq5">{$Think.lang.faq_index_q5}</a></li>
+							<li><a href="#faq6">{$Think.lang.faq_index_q6}</a></li>
+							<li><a href="#faq7">{$Think.lang.faq_index_q7}</a></li>
+							<li><a href="#faq8">{$Think.lang.faq_index_q8}</a></li>
+							<li><a href="#faq9">{$Think.lang.faq_index_q9}</a></li>
+							<li><a href="#faq10">{$Think.lang.faq_index_q10}</a></li>
+							<li><a href="#faq11">{$Think.lang.faq_index_q11}</a></li>
+							<li><a href="#faq12">{$Think.lang.faq_index_q12}</a></li>
+							<li><a href="#faq13">{$Think.lang.faq_index_q13}</a></li>
+							<li><a href="#faq14">{$Think.lang.faq_index_q14}</a></li>
+							<li><a href="#faq15">{$Think.lang.faq_index_q15}</a></li>
+							<li><a href="#faq16">{$Think.lang.faq_index_q16}</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="plr20 faq">
+				<div class="f14 fb ptb30" id="faq1">1. {$Think.lang.faq_index_q1}</div>
+				<!--<div class="pr linkto">
+					<div class="ptb30 di am" style="margin-left:25px;" url="https://github.com/MOACChain/moac-core">https://github.com/MOACChain/moac-core</div>
+				</div>-->
+				<div class="answer cl">
+					<span class="icon icon-www am fl"></span>
+					<div style="margin-left:25px;">
+						<p>{$Think.lang.faq_index_a1_text1}</p>
+						<p>{$Think.lang.faq_index_a1_text2}</p>
+					</div>
+				</div>
+				<div class="f14 fb ptb30" id="faq2">2. {$Think.lang.faq_index_q2}</div>
+				<!--<div class="pr linkto">
+					<div class="ptb30 di am" style="margin-left:25px;" url="https://github.com/MOACChain/moac-core">https://github.com/MOACChain/moac-core</div>
+				</div>-->
+				<div class="answer">
+					<span class="icon icon-www am fl"></span>
+					<div style="margin-left:25px;">
+						<p>{$Think.lang.faq_index_a2_text1}</p>
+					</div>
+				</div>
+				<div class="f14 fb ptb30" id="faq3">
+					<div class="dt">
+						<div class="dc w5 at">3.</div>
+						<div class="dc at">{$Think.lang.faq_index_q3}</div>
+					</div>
+				</div>
+				<!--<div class="pr linkto">
+					<div class="ptb30 di am" style="margin-left:25px;" url="https://www.moac.io">MOAC website: www.moac.io</div>
+				</div>-->
+				<div class="answer">
+					<span class="icon icon-www am fl"></span>
+					<div style="margin-left:25px;">
+<p>{$Think.lang.faq_index_a3_text1}</p>
+
+<p>{$Think.lang.faq_index_a3_text2}</p>
+
+<p>{$Think.lang.faq_index_a3_text3}</p>
+					</div>
+				</div>
+				<div class="f14 fb ptb30" id="faq4">4.{$Think.lang.faq_index_q4}</div>
+				<!--<div class="pr linkto">
+					<div class="ptb30 di am" style="margin-left:25px;" url="https://github.com/MOACChain/moac-core">https://github.com/MOACChain/moac-core</div>
+				</div>-->
+				<div class="answer">
+					<span class="icon icon-www am fl"></span>
+					<div style="margin-left:25px;">
+<p>{$Think.lang.faq_index_a4_text1}</p>
+
+<p>{$Think.lang.faq_index_a4_text2}</p>
+
+<p>{$Think.lang.faq_index_a4_text3}</p>
+
+<p>{$Think.lang.faq_index_a4_text4}</p>
+					</div>
+				</div>
+				<div class="f14 fb pt30" id="faq5">
+					<div class="dt">
+						<div class="dc w5 at">5.</div>
+						<div class="dc at">{$Think.lang.faq_index_q5}</div>
+					</div>
+				</div>
+				<div class="pr linkto">
+					<span class="icon icon-www am"></span>
+					<div class="ptb30 di am" style="margin-left:7px;" url="https://www.moac.io">{$Think.lang.faq_index_a5_text1}</div>
+				</div>
+				<div class="f14 fb ptb30" id="faq6">
+					<div class="dt">
+						<div class="dc w5 at">6.</div>
+						<div class="dc at">{$Think.lang.faq_index_q6}</div>
+					</div>
+				</div>
+				<div class="answer">
+					<span class="icon icon-www am fl"></span>
+					<div style="margin-left:25px;">
+<p>{$Think.lang.faq_index_a6_text1}</p>
+					</div>
+				</div>
+				<div class="f14 fb ptb30" id="faq7">
+					<div class="dt">
+						<div class="dc w5 at">7.</div>
+						<div class="dc at">{$Think.lang.faq_index_q7}</div>
+					</div>
+				</div>
+				<div class="answer">
+					<span class="icon icon-www am fl"></span>
+					<div style="margin-left:25px;">
+<p>{$Think.lang.faq_index_a7_text1}</p>
+<p>{$Think.lang.faq_index_a7_text2}</p>
+					</div>
+				</div>
+				<div class="f14 fb ptb30" id="faq8">
+					<div class="dt">
+						<div class="dc w5 at">8.</div>
+						<div class="dc at">{$Think.lang.faq_index_q8}</div>
+					</div>
+				</div>
+				<!--<div class="pr linkto">
+					<div class="ptb30 di am" style="margin-left:25px;" url="https://github.com/MOACChain/moac-core">https://github.com/MOACChain/moac-core</div>
+				</div>-->
+				<div class="answer">
+					<span class="icon icon-www am fl"></span>
+					<div style="margin-left:25px;">
+<p>{$Think.lang.faq_index_a8_text1}</p>
+<p>{$Think.lang.faq_index_a8_text2}</p>
+					</div>
+				</div>
+				<div class="f14 fb ptb30" id="faq9">9.{$Think.lang.faq_index_q9}</div>
+				<!--<div class="pr linkto">
+					<div class="ptb30 di am" style="margin-left:25px;" url="https://github.com/MOACChain/moac-core">https://github.com/MOACChain/moac-core</div>
+				</div>-->
+				<div class="answer">
+					<span class="icon icon-www am fl"></span>
+					<div style="margin-left:25px;">
+<p>{$Think.lang.faq_index_a9_text1}</p>
+<p>{$Think.lang.faq_index_a9_text2}</p>
+<p>{$Think.lang.faq_index_a9_text3}</p>
+					</div>
+				</div>
+				<div class="f14 fb ptb30" id="faq10">10.{$Think.lang.faq_index_q10}</div>
+				<!--<div class="pr linkto">
+					<div class="ptb30 di am" style="margin-left:25px;" url="https://github.com/MOACChain/moac-core">https://github.com/MOACChain/moac-core</div>
+				</div>-->
+				<div class="answer">
+					<span class="icon icon-www am fl"></span>
+					<div style="margin-left:25px;">
+<p>{$Think.lang.faq_index_a10_text1}</p>
+					</div>
+				</div>
+				<div class="f14 fb ptb30" id="faq11">11.{$Think.lang.faq_index_q11}</div>
+				<!--<div class="pr linkto">
+					<div class="ptb30 di am" style="margin-left:25px;" url="https://github.com/MOACChain/moac-core">https://github.com/MOACChain/moac-core</div>
+				</div>-->
+				<div class="answer">
+					<span class="icon icon-www am fl"></span>
+					<div style="margin-left:25px;">
+<p>{$Think.lang.faq_index_a11_text1} </p>
+					</div>
+				</div>
+				<div class="f14 fb ptb30" id="faq12">12.{$Think.lang.faq_index_q12}</div>
+				<!--<div class="pr linkto">
+					<div class="ptb30 di am" style="margin-left:25px;" url="https://github.com/MOACChain/moac-core">https://github.com/MOACChain/moac-core</div>
+				</div>-->
+				<div class="answer">
+					<span class="icon icon-www am fl"></span>
+					<div style="margin-left:25px;">
+<p>{$Think.lang.faq_index_a12_text1}</p>
+<p>{$Think.lang.faq_index_a12_text2}</p>
+<p>{$Think.lang.faq_index_a12_text3}</p>
+<p>{$Think.lang.faq_index_a12_text4}</p>
+					</div>
+				</div>
+				<div class="f14 fb ptb30" id="faq13">
+					<div class="dt">
+						<div class="dc w5 at">13.</div>
+						<div class="dc at">{$Think.lang.faq_index_q13}</div>
+					</div>
+				</div>
+				<!--<div class="pr linkto">
+					<div class="ptb30 di am" style="margin-left:25px;" url="https://github.com/MOACChain/moac-core">https://github.com/MOACChain/moac-core</div>
+				</div>-->
+				<div class="answer">
+					<span class="icon icon-www am fl"></span>
+					<div style="margin-left:25px;">
+<p>{$Think.lang.faq_index_a13_text1}</p>
+					</div>
+				</div>
+				<div class="f14 fb ptb30" id="faq14">
+					<div class="dt">
+						<div class="dc w5 at">14.</div>
+						<div class="dc at">{$Think.lang.faq_index_q14}</div>
+					</div>
+				</div>
+				<!--<div class="pr linkto">
+					<div class="ptb30 di am" style="margin-left:25px;" url="https://github.com/MOACChain/moac-core">https://github.com/MOACChain/moac-core</div>
+				</div>-->
+				<div class="answer">
+					<span class="icon icon-www am fl"></span>
+					<div style="margin-left:25px;">
+<p>{$Think.lang.faq_index_a14_text1}</p>
+<p>{$Think.lang.faq_index_a14_text2}</p>
+					</div>
+				</div>
+				<div class="f14 fb ptb30" id="faq15">
+					<div class="dt">
+						<div class="dc w5 at">15.</div>
+						<div class="dc at">{$Think.lang.faq_index_q15}</div>
+					</div>
+				</div>
+				<!--<div class="pr linkto">
+					<div class="ptb30 di am" style="margin-left:25px;" url="https://github.com/MOACChain/moac-core">https://github.com/MOACChain/moac-core</div>
+				</div>-->
+				<div class="answer">
+					<span class="icon icon-www am fl"></span>
+					<div style="margin-left:25px;">
+<p>{$Think.lang.faq_index_a15_text1}</p>
+					</div>
+				</div>
+				<div class="f14 fb pt30 green">{$Think.lang.faq_index_a16_text1}</div>
+				<div class="pr linkto">
+					<div class="pt30" url="https://github.com/MOACChain/moac-core">Github: https://github.com/MOACChain/moac-core</div>
+				</div>
+				<div class="pr linkto">
+					<div class="pt10" url="https://www.moac.io">{$Think.lang.faq_index_a16_text2}</div>
+				</div>
+			</div>
+			<div class="bt ptb15 plr20 mt70" id="faq16">
+				<div class="dt">
+					<div class="dc w33x">
+						<div class="btn-community openlink new" url="https://github.com/MOACChain/moac-core"><span class="icon icon-community-github am"></span><span class="am ml10">Github</span></div>
+					</div>
+					<div class="dc w33x">
+						<div class="btn-community openlink new" url="https://medium.com/@moac_io"><span class="icon icon-community-medium am"></span><span class="am ml10">Medium</span></div>
+					</div>
+					<div class="dc w33x">
+						<div class="btn-community openlink new" url="https://www.reddit.com/r/MOAC/"><span class="icon icon-community-reddit am"></span><span class="am ml10">Reddit</span></div>
+					</div>
+				</div>
+				<div class="dt mt15">
+					<div class="dc w33x">
+						<div class="btn-community openlink new" url="https://twitter.com/moac_io"><span class="icon icon-community-twitte am"></span><span class="am ml10">Twitter</span></div>
+					</div>
+					<div class="dc w33x">
+						<div class="btn-community openlink new" url="https://www.facebook.com/moacchain/"><span class="icon icon-community-facebook am"></span><span class="am ml10">Facebook</span></div>
+					</div>
+					<div class="dc w33x">
+						<div class="btn-community openlink new" url="https://www.linkedin.com/company/moac-chain/"><span class="icon icon-community-in am"></span><span class="am ml10">Linkedin</span></div>
+					</div>
+				</div>
+				<div class="dt mt15">
+					<div class="dc w33x">
+						<div class="btn-community openlink new" url="http://t.me/moacblockchain"><span class="icon icon-community-moacwebsite am"></span><span class="am ml10 di">Telegram</span></div>
+					</div>
+					<div class="dc w33x">
+						<div class="btn-community openlink new" url="https://t.me/joinchat/Gws6HEqdmbKnC2jdsdRN7Q"><span class="icon icon-community-moacwebsite am"></span><span class="am ml10 di">Telegram China</span></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+.faq .linkto{font-size:3.2vmin;}
+/*.faq .linkto:active .icon{background-position-x: -260px;}*/
+/*.faq .linkto:active{color:#03c0b7;}*/
+.faq .answer p{
+	padding-top:30px;
+	line-height: 1.5;
+	text-align:left;
+	font-size:3.2vmin;
+}
+.faq .answer p:first-child{
+	padding-top:0px;
+}
+.btn-community:active{
+	color:#000;
+}
+.pubdate:active{
+	color:#666;
+}
+.faq-index ul li{
+	list-style:disc;
+	margin-left:20px;
+}
+.faq-index a{
+	display: block;
+	color:#333;
+	padding:10px 0;
+	line-height: 1.2;
+	font-weight: bold;
+}
+.faq-index a:active{
+	color:#03C0B7;
+}
+</style>
+<script type="text/javascript">
+(function(){
+
+})();
+</script>
+<div class="footer">
+	<div class="wrap ptb25 plr20">
+		<div class="dt f12 lh2x">
+			<div class="dc at pr10">
+				<div class="">
+					<span class="ab fb">MOAC</span>
+					<a href="{:U('Resources/resource_news')}" class="f10 ml10">{$Think.lang.nav_resources}</a>
+					<a href="https://developer.moac.io/" class="f10 ml10">{$Think.lang.nav_developers}</a>
+					<a href="{:U('Faq/faq')}" class="f10 ml10">{$Think.lang.nav_faqs}</a>					
+				</div>
+			</div>
+		</div>
+		<div class="dt f12 lh2x">
+			<div class="dc at pr10">
+				<div class="pb15">
+					<span class="ab fb">{$Think.lang.nav_foot_legal}</span>
+					<a href="{:U('About/terms_of_use')}" class="f10 ml10">{$Think.lang.nav_foot_term}</a>
+					<a href="{:U('About/cookie_policy')}" class="f10 ml10">{$Think.lang.nav_foot_cookie}</a>
+					<a href="{:U('About/privacy_policy')}" class="f10 ml10">{$Think.lang.nav_foot_privacy}</a>
+				</div>
+			</div>
+		</div>
+		<div class="dt f12 ac mt15">
+			<div class="dc at bt bb ptb15" style="border-color:#4d4d4d;">
+				<div class="di">
+					<div class="btn-contact openlink new" url="mailto:info@moac.io"><span class="icon icon-email am"></span><span class="am ml5">info@moac.io</span></div>
+				</div>
+				<div class="di ml15">
+					<div class="btn-contact openlink new" url="https://www.moac.io"><span class="icon icon-www am"></span><span class="am ml5">www.moac.io</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="ptb20 f10 ac">Copyright &copy; MOAC Team 2018 | {$Think.lang.nav_foot_reserved}</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
