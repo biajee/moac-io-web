@@ -7,7 +7,6 @@ class IndexController extends BaseController {
     }
 
     public function index() {
-    	var_dump('为什么');exit;
     	//模板输出
         $this->display();
     }
