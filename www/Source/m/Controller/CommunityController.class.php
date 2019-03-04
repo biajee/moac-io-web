@@ -1,5 +1,5 @@
 <?php
-namespace m\Controller;
+namespace M\Controller;
 class CommunityController extends BaseController {
     public function community(){
     	$lang = cookie('think_lang');

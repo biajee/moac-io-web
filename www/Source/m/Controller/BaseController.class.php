@@ -1,5 +1,5 @@
 <?php
-namespace m\Controller;
+namespace M\Controller;
 use Think\Controller;
 class BaseController extends Controller {
 	protected $cacheSvc = null;

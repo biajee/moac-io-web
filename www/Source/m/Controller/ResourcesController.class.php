@@ -1,5 +1,5 @@
 <?php
-namespace m\Controller;
+namespace M\Controller;
 class ResourcesController extends BaseController {
     public function resource(){
         //显示模板

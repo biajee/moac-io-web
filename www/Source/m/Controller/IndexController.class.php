@@ -1,5 +1,5 @@
 <?php
-namespace m\Controller;
+namespace M\Controller;
 class IndexController extends BaseController {
     public function _initialize()
     {
