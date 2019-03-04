@@ -12,6 +12,7 @@ class BaseController extends Controller {
     protected $needshare = false;
     
     public function _initialize() {
+    	var_dump('11111');exit;
     	$pageURL = $_SERVER["REQUEST_URI"];
 //  	$pageURL = 'http';
 //		$pageURL .= "://";
