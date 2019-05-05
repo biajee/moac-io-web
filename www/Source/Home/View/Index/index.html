@@ -86,7 +86,7 @@
 									<li class="">
 										<a href="{:U('Community/community')}">{$Think.lang.nav_community}</a>
 									</li>
-									<if condition="$langset eq 'zh-cn'">
+									<if condition="($langset eq 'zh-cn') OR ($langset eq 'zh-CH')">
 									<li class="">
 										<a href="/?lang=en-us" class="s"><i class="flag-en-us"></i>{$Think.lang.lang_en}{$langset}</a>
 									</li>
