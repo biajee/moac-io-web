@@ -4,7 +4,7 @@ return array(
     'lang_en' => 'English',
     'lang_zh' => '中文',
     'lang_wap_en' => 'EN',
-    'lang_wap_zh' => 'CHS',
+    'lang_wap_zh' => '中文',
     //导航栏nav
     'nav_home' => 'Home',
     'nav_ambassadors' => 'Ambassadors',
