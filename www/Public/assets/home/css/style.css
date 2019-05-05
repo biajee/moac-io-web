@@ -3272,7 +3272,7 @@ border: none;
 background-repeat: no-repeat; 
 background-position: 54px -30px; 
 } 
-[class^="flag-"],[class*=" flag-"] {display: inline-block;margin-top:2px;width: 16px;height: 11px;line-height: 11px;vertical-align: text-top;background-image: url("http://file.aconf.org/public/images/icons/flags.png");background-repeat: no-repeat;*margin-right: .3em;margin-right: 0.3em} 
+[class^="flag-"],[class*=" flag-"] {display: inline-block;margin-top:4px;width: 16px;height: 11px;line-height: 11px;vertical-align: text-top;background-image: url("http://file.aconf.org/public/images/icons/flags.png");background-repeat: no-repeat;*margin-right: .3em;margin-right: 0.3em} 
 [class^="flag-"]:last-child,[class*=" flag-"]:last-child {*margin-left: 0 } 
 .flag-ad{background-position:0 0} 
 .flag-ae{background-position:0 -31px} 
