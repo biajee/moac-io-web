@@ -88,11 +88,11 @@
 									</li>
 									<if condition="$langset eq 'en-us'">
 										<li>
-											<a href="/?lang=zh-cn"> <i class="flag-zh-cn"></i>{$Think.lang.lang_zh}</a>
+											<a href="/?lang=zh-cn"> <i class="flag-zh-cn"></i>{$Think.lang.lang_zh}{$langset}</a>
 										</li>
 									<else />
 										<li class="">
-											<a href="/?lang=en-us" class="s"><i class="flag-en-us"></i>{$Think.lang.lang_en}</a>
+											<a href="/?lang=en-us" class="s"><i class="flag-en-us"></i>{$Think.lang.lang_en}{$langset}</a>
 										</li>
 									</if>
 								</ul>
