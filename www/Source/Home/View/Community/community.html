@@ -86,6 +86,15 @@
 									<li class="current-menu-item">
 										<a href="{:U('Community/community')}">{$Think.lang.nav_community}</a>
 									</li>
+									<if condition="$langset eq 'en-us'">
+										<li>
+											<a href="/?lang=zh-cn"> <i class="flag-zh-cn"></i>{$Think.lang.lang_zh}</a>
+										</li>
+									<else />
+										<li class="">
+											<a href="/?lang=en-us" class="s"><i class="flag-en-us"></i>{$Think.lang.lang_en}</a>
+										</li>
+									</if>
 								</ul>
 							</div>
 							<span class="pa mousewith" style="border-bottom:3px solid #333;left:0;bottom:0;"></span>
