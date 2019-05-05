@@ -86,20 +86,19 @@
 									<li class="">
 										<a href="{:U('Community/community')}">{$Think.lang.nav_community}</a>
 									</li>
+									<if condition="$langset neq 'en-us'">
+									<li class="">
+										<a href="/?lang=en-us" class="s"><i class="flag-en-us"></i>{$Think.lang.lang_en}{$langset}</a>
+									</li>
+									<else />
+									<li>
+										<a href="/?lang=zh-cn"> <i class="flag-zh-cn"></i>{$Think.lang.lang_zh}{$langset}</a>
+									</li>
+									</if>
 								</ul>
 							</div>
 							<span class="pa mousewith" style="border-bottom:3px solid #333;left:0;bottom:0;"></span>
 						</div>
-					</div>
-					<div style="line-height: 45px; height: 45px;">
-					<ul id="language" class="jsSelect">
-						<li>
-							<a href="/?lang=en-us" class="s"><i class="flag-en-us"></i>{$Think.lang.lang_en}</a>
-						</li>
-						<li>
-							<a href="/?lang=zh-cn"> <i class="flag-zh-cn"></i>{$Think.lang.lang_zh}</a>
-						</li>
-					</ul>
 					</div>
 				</div>
 			</div>
