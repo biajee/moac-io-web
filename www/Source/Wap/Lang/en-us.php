@@ -2,7 +2,7 @@
 return array(
     'test' => '多语言测试',
     'lang_en' => 'English',
-    'lang_zh' => 'Chinese',
+    'lang_zh' => '中文',
     'lang_wap_en' => 'EN',
     'lang_wap_zh' => 'CHS',
     //导航栏nav
