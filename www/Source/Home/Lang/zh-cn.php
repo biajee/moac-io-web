@@ -1,7 +1,7 @@
 <?php
 return array(
     'test' => '多语言测试',
-    'lang_en' => '英文',
+    'lang_en' => 'English',
     'lang_zh' => '中文',
     //导航栏nav
     'nav_home' => '主页',
