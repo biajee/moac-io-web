@@ -11,6 +11,7 @@ return array(
     'nav_developers' => '开发者',
     'nav_faqs' => '常见问题',
     'nav_community' => '社区',
+    'nav_touch' => '联系',
     'nav_two_news' => '新闻',
     'nav_two_events' => '事件',
     'nav_two_whitepaper' => '白皮书',
@@ -19,6 +20,7 @@ return array(
     'nav_two_explorer' => '区块浏览',
     'nav_two_blog' => '博客',
     'nav_two_comparison' => '墨客对比',
+    'nav_two_touch' => '取得联系',
     'nav_foot_term' => '使用条款',
     'nav_foot_cookie' => '浏览记录条款',
     'nav_foot_privacy' => '隐私条款',
@@ -319,4 +321,12 @@ return array(
     'moaccomparison_model3_text21' => '纽带',
     'moaccomparison_model3_text22' => '可配置',
     'moaccomparison_model3_text23' => '日期',
+    
+    //Touch
+    //Get To Touch
+    'gettotouch_title' => 'MOAC Foundation',
+    'gettotouch_text' => "You're Invited! Take a break from Consensus and join our Silicon Valley Executive team at the private meeting room at New York Hilton Midtown for cocktails and snacks. This is a private event but you are welcome to bring a guest. Make sure both of you register by sending an RSVP to charles.ng@moac.io by Sunday, May 12th.",
+    'gettotouch_model1_text1' => '<strong>Hosted by:</strong>  MOAC Foundation',
+    'gettotouch_model1_text2' => '<strong>Where:</strong>  The Executive Suite, New York Hilton Midtown @ 1335, 6th Ave, New York, NY 10019',
+    'gettotouch_model1_text3' => '<strong>When:</strong>,  May 13th-15th , 12:00 PM - 4:00 PM',
 );

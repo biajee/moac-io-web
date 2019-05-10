@@ -11,6 +11,7 @@ return array(
     'nav_developers' => 'Developers',
     'nav_faqs' => 'FAQs',
     'nav_community' => 'Community',
+    'nav_touch' => 'Touch',
     'nav_two_news' => 'News',
     'nav_two_events' => 'Events',
     'nav_two_whitepaper' => 'Whitepaper',
@@ -19,6 +20,7 @@ return array(
     'nav_two_explorer' => 'Explorer',
     'nav_two_blog' => 'Blog',
     'nav_two_comparison' => 'MOAC Comparison',
+    'nav_two_touch' => 'Get To Touch',
     'nav_foot_term' => 'Terms of Use',
     'nav_foot_cookie' => 'Cookie Policy',
     'nav_foot_privacy' => 'Privacy Policy',
@@ -319,4 +321,13 @@ return array(
     'moaccomparison_model3_text21' => 'BOND',
     'moaccomparison_model3_text22' => 'CONFIGURABLE',
     'moaccomparison_model3_text23' => 'Date',
+    
+    //Touch
+    //Get To Touch
+    'gettotouch_title' => 'MOAC Foundation',
+    'gettotouch_text' => "You're Invited! Take a break from Consensus and join our Silicon Valley Executive team at the private meeting room at New York Hilton Midtown for cocktails and snacks. This is a private event but you are welcome to bring a guest. Make sure both of you register by sending an RSVP to charles.ng@moac.io by Sunday, May 12th.",
+    'gettotouch_model1_text1' => '<strong>Hosted by:</strong>  MOAC Foundation',
+    'gettotouch_model1_text2' => '<strong>Where:</strong>  The Executive Suite, New York Hilton Midtown @ 1335, 6th Ave, New York, NY 10019',
+    'gettotouch_model1_text3' => '<strong>When:</strong>,  May 13th-15th , 12:00 PM - 4:00 PM',
+    
 );

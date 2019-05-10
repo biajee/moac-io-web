@@ -67,29 +67,23 @@
 									<li class="">
 										<a href="{:U('Index/index')}">{$Think.lang.nav_home}</a>
 									</li>
-									<li class="current-menu-item">
-										<a href="{:U('Ambassadors/ambassadors')}">{$Think.lang.nav_ambassadors}</a>
-									</li>
-
 									<li class="">
 										<a href="{:U('Moodada/moodada')}" target="_blank">{$Think.lang.nav_moodada}</a>
 									</li>
+
 									<li class="">
 										<a href="{:U('Resources/resource_news')}">{$Think.lang.nav_resources}</a>
 									</li>
 									<li class="">
 										<a href="https://developer.moac.io/" target="_blank">{$Think.lang.nav_developers}</a>
 									</li>
-									<!--<li class="">
-										<a href="https://www.candydrop.io/moac" target="_blank">Bounty</a>
-									</li>-->
 									<li class="">
 										<a href="{:U('Faq/faq')}">{$Think.lang.nav_faqs}</a>
 									</li>
 									<li class="">
 										<a href="{:U('Community/community')}">{$Think.lang.nav_community}</a>
 									</li>
-									<li class="">
+									<li class="current-menu-item">
 										<a href="{:U('Touch/get_to_touch')}">{$Think.lang.nav_touch}</a>
 									</li>
 									<if condition="$langset neq 'en-us'">
@@ -113,46 +107,25 @@
 </div>
 <div class="page">
 <div class="main">
-	<div class="box pt120 bg-gray">
+	<div class="box al firstScreen pt100">
+		<div class="bg-black-light ptb35 pubdate">
+			<div class="wrap w1100">
+				<a href="{:U('Touch/get_to_touch')}" class="active">{$Think.lang.nav_two_touch}</a>
+			</div>
+		</div>
+	</div>
+	<div class="box pt80 bg-gray">
 		<div class="wrap">
 			<div class="f36 fb lh1x2 pb20">
-				{$Think.lang.ambassadors_title1}
+				{$Think.lang.gettotouch_title}
 			</div>
-			<div class="f12 pb60 fb">{$Think.lang.ambassadors_date}</div>
-			<div class="fb f24 pb40">{$Think.lang.ambassadors_title2}</div>
-			<div class="article f14">
-				<p>{$Think.lang.ambassadors_title2_text}</p>
+			<div class="article f14" style="font-size: 20px;">
+				<p>{$Think.lang.gettotouch_text}</p>
+				<p>{$Think.lang.gettotouch_model1_text1}</p>
+				<p>{$Think.lang.gettotouch_model1_text2}</p>
+				<p>{$Think.lang.gettotouch_model1_text3}</p>
 
 			</div>
-<!-- 			<div class="f28 fb pb10 pt100">MOAC WHITEPAPER</div>
-			<div class="f16 gray pb20">April 2018</div>
-			<div class="abtn-black large w250 openlink new" url="https://github.com/MOACChain/moac-core/raw/master/doc/MOAC%20-%20White%20Paper_%20v1.0%20-%20050218.pdf">
-				<span>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.41 34.43" width="20" height="20" class="am mr5">
-						<defs>
-							<style>
-								.abtn-black .cls-1 {
-									fill: #fff;
-									fill-rule: evenodd;
-								}
-								.abtn-black:hover .cls-1 {
-									fill: #000;
-									fill-rule: evenodd;
-								}
-							</style>
-						</defs>
-						<g>
-							<g>
-								<path class="cls-1" d="M6.27,26.92C2.54,29.7,0,33.65,1,34.27l-.88-.44c-.51-.63.65-4,6.16-6.91Z"/>
-								<path class="cls-1" d="M34.25,23.8C36.16,19.74,20.47,20.35,9,25.67c8.92-3.43,25.44-4.91,25.25-1.87Z"/>
-								<path class="cls-1" d="M16.5,2.18c.43-2.25-.68-2.17-1-2.17h-.7c-.38,0-.73.31-.9.93-1.08,4.06.89,14.36,6.43,19.13,4.89,4.21,13.4,6.13,13.74,4.1-1.77.85-8.41-1.29-12.88-4.85C15.93,15,13.67,4.29,14.81,1a2.21,2.21,0,0,1,.51-.81,2.39,2.39,0,0,1,1.18,2Z"/>
-								<path class="cls-1" d="M16.41,2.83a51.42,51.42,0,0,1-5.32,17.34c-4.95,10-8.57,14.64-11,13.66l.86.44c1.89,1,5.36-2.21,11.12-13.31,4.44-8.56,4.2-13,4.32-18.13Z"/>
-							</g>
-						</g>
-					</svg>
-					PDF | DOWNLOAD
-				</span>
-			</div> -->
 			<div class="pt100 ac">
 				<img src="__IMG__/011.png">
 			</div>

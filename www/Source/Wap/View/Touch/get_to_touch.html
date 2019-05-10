@@ -57,7 +57,7 @@
 				<li class="menu-item">
 					<a href="{:U('Community/community')}">{$Think.lang.nav_community}</a>
 				</li>
-				<li class="menu-item">
+				<li class="menu-item current-menu-item">
 					<a href="{:U('Touch/get_to_touch')}">{$Think.lang.nav_touch}</a>
 				</li>
 			</ul>
@@ -67,31 +67,31 @@
 <div class="page" id="page">
 <div class="main">
 	<div class="box al firstScreen pt60">
-		<div class="bg-black-light ptb15 plr20 pubdate">
-			<div class="wrap">
-				<div class="f14 fb">{$Think.lang.cookie_moac}</div>
-				<div class="f12 pt10">{$Think.lang.cookie_moac_text}</div>
+		<div class="bg-black-light pt30 pr15 pb15 pubdate">
+			<div class="wrap f14">
+				<a href="{:U('Touch/get_to_touch')}" class="active">{$Think.lang.nav_two_touch}</a>
 			</div>
 		</div>
 	</div>
-	<div class="box bg-gray-light">
+	<div class="box pt40 bg-gray plr20">
 		<div class="wrap">
-			<div class="f22 fb ac pt30 pb15">{$Think.lang.cookie_title}</div>
-			<div class="lh1x2 ac pb20 bb f12" style="border-color:#333;">
-				{$Think.lang.cookie_title_span}
+			<div class="f18 fb lh1x2 pb20">
+				{$Think.lang.gettotouch_title}
 			</div>
-			<div class="plr20 ptb40 article">
-				<p>{$Think.lang.cookie_text1}</p>
-				<ul>
-					<li><strong>{$Think.lang.cookie_text2}</strong> {$Think.lang.cookie_text3}</li>
-					<li><strong>{$Think.lang.cookie_text4}</strong> {$Think.lang.cookie_text5}</li>
-					<li><strong>{$Think.lang.cookie_text6}</strong> {$Think.lang.cookie_text7}</li>
-					<li><strong>{$Think.lang.cookie_text8}</strong> {$Think.lang.cookie_text9}</li>
-				</ul>
-				<p>{$Think.lang.cookie_text10}</p>
-				<p>{$Think.lang.cookie_text11}</p>
+			<div class="article" style="font-size: 16px;">
+				<p>{$Think.lang.gettotouch_text}</p>
+
+<p>{$Think.lang.gettotouch_model1_text1}</p>
+
+<p>{$Think.lang.gettotouch_model1_text2}</p>
+
+<p>{$Think.lang.gettotouch_model1_text3}</p>
+
 			</div>
-			<div class="bt ptb15 plr20 mt70" id="faq16">
+			<div class="pt50 ac">
+				<img src="__IMG__/011.png" width="100%">
+			</div>
+			<div class="bt ptb15 plr20">
 				<div class="dt">
 					<div class="dc w33x">
 						<div class="btn-community openlink new" url="https://github.com/MOACChain/moac-core"><span class="icon icon-community-github am"></span><span class="am ml10">Github</span></div>
@@ -127,36 +127,33 @@
 	</div>
 </div>
 <style type="text/css">
-.faq .linkto{font-size:3.2vmin;}
-/*.faq .linkto:active .icon{background-position-x: -260px;}*/
-/*.faq .linkto:active{color:#03c0b7;}*/
-.faq .answer p{
-	padding-top:30px;
-	line-height: 1.5;
-	text-align:left;
-	font-size:3.2vmin;
+.pager a,.pager span{border-color:#f5f5f5;}
+.pager span{
+	border-bottom:1px solid #161616;
 }
-.faq .answer p:first-child{
-	padding-top:0px;
+.pager span.pages, .pager span.extend {
+     border-bottom: 1px solid #f5f5f5; 
 }
-.btn-community:active{
+.list .item{
+	position: relative;
+	margin:20px;
+}
+.list .item:hover{
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+}
+.btn-community:hover{
 	color:#000;
 }
-.pubdate:active{
-	color:#666;
+.pubdate a{
+	color:#808080;
+	margin-left:15px;
+	display: inline-block;
+	margin-bottom:15px;
 }
-.faq-index ul li{
-	list-style:disc;
-	margin-left:20px;
+.pubdate a:hover{
+	color:#fff;
 }
-.faq-index a{
-	display: block;
-	color:#333;
-	padding:10px 0;
-	line-height: 1.2;
-	font-weight: bold;
-}
-.faq-index a:active{
+.pubdate a.active,.pubdate a.active:hover{
 	color:#03C0B7;
 }
 </style>
@@ -173,7 +170,7 @@
 					<span class="ab fb">MOAC</span>
 					<a href="{:U('Resources/resource_news')}" class="f10 ml10">{$Think.lang.nav_resources}</a>
 					<a href="https://developer.moac.io/" class="f10 ml10">{$Think.lang.nav_developers}</a>
-					<a href="{:U('Faq/faq')}" class="f10 ml10">{$Think.lang.nav_faqs}</a>				
+					<a href="{:U('Faq/faq')}" class="f10 ml10">{$Think.lang.nav_faqs}</a>					
 				</div>
 			</div>
 		</div>
